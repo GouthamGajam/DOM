@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Class Manipulation</title>
+    <style>
+        .red-bg {
+            background-color: red;
+        }
+        .white-text {
+            color: white;
+        }
+        .large-font {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Send</button>
+    <script>
+        let btn = document.getElementById("btn");
+
+        // Add classes
+        btn.classList.add('red-bg', 'white-text');
+
+        // Check if the class 'white-text' is present
+        console.log(btn.classList.contains('white-text')); // true
+
+        // Remove class
+        btn.classList.remove('white-text');
+
+        // Check if the class 'white-text' is still present
+        console.log(btn.classList.contains('white-text')); // false
+
+        // Toggle class (add if not present, remove if present)
+        btn.classList.toggle('large-font'); // Adds the class
+        btn.classList.toggle('large-font'); // Removes the class
+
+        // Check the current class list
+        console.log(btn.classList);
+    </script>
+</body>
+</html>

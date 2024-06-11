@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--beforebegin-->
+    <div id="intro">
+        <!--afterbegin-->
+        <h2>Heading</h2>
+        <p>This is a p tag</p>
+        <!--beforeend-->
+    </div>
+    <!--afterend-->
+    <script>
+        let elm = document.getElementById("intro");
+        let html = "<h1>This is added new h1</h1>";
+        elm.insertAdjacentHTML('afterend', html);
+    </script>
+</body>
+</html>

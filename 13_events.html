@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <!-- <button id="btn" onclick="clicked()">Click me </button>  - direct -->
+        <button id="btn">Click me </button>
+    </div>
+
+    <script>
+        function clicked()
+        {
+            alert("You clicked Button");
+        }
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",clicked)
+        btn.addEventListener("mouseover",function(){ alert("You are on click Button")});
+        btn.addEventListener("mouseout",function(){ console.log("You are out of click Button")});
+        // removdeEventListener("mouseover", func());
+    </script>
+</body>
+</html>

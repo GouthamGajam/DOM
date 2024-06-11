@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px;
+            background-color: cornsilk;
+        }
+
+        #myDiv {
+            padding: 50px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <button id="btn">Click me</button>
+    </div>
+    <script>
+        let d = document.getElementById("myDiv");
+        let b = document.getElementById("btn");
+
+        b.addEventListener('click', btnClicked);    // add true for revese 
+        d.addEventListener('click', divClicked);
+        document.body.addEventListener('click', bodyClicked);
+
+        function btnClicked(event) {
+            console.log("Button clicked....");
+            // event.stopPropagation();     //- only button
+        }
+
+        function divClicked(event) {
+            console.log("Div clicked....");
+        }
+
+        function bodyClicked(event) {
+            console.log("Body clicked....");
+        }
+    </script>
+</body>
+</html>
