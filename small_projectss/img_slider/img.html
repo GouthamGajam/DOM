@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="img.css">
+</head>
+<body>
+
+<div class="slide-container">
+    <div class="slide">
+        <img src="https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1689079772/autoexpress/2023/07/Koenigsegg%20Gemera%202023.jpg"
+             alt="Image 1">
+        <div class="caption">Caption Text 1</div>
+    </div>
+    <div class="slide">
+        <img src="https://news.dupontregistry.com/wp-content/uploads/2023/11/Koen-Main-1080x570.jpg"
+             alt="Image 2">
+        <div class="caption">Caption Text 2</div>
+    </div>
+    <div class="slide">
+        <img src="https://www.sevenworld.com/content/images/size/w2000/2023/08/Untitled-design-5.png"
+             alt="Image 3">
+        <div class="caption">Caption Text 3</div>
+    </div>
+    <div class="slide">
+        <img src="https://www.bosshunting.com.au/wp-content/uploads/2023/07/Koenigsegg-Gemera-2024-min.jpg"
+             alt="Image 4">
+        <div class="caption">Caption Text 4</div>
+    </div>
+
+    <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+    <span class="arrow next" onclick="controller(1)">&#10095;</span>
+</div>
+
+<script src="img.js"></script>
+
+</body>
+</html>
