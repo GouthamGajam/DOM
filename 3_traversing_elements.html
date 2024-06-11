@@ -1,0 +1,36 @@
+<!-- Traversing elements -->
+ <!-- changing from children to parent vise varsa etc  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <h2>heading 1</h2>
+     <ul>
+         <li id="intro">list 1</li>
+         <li>list 2</li>
+         <li>list 3</li>
+         <li>list 4</li>
+     </ul>
+     <ul>
+         <li>list a</li>
+         <li>list b</li>
+         <li>list c</li>
+         <li>list d</li>
+     </ul>
+     <script>
+         let elm = document.getElementById("intro");
+         let prt = elm.parentElement;  // this is to select parent
+        //  let node = elm. firstElementChild    this is for children 
+        // lastElement , 
+        // elm.children to select all
+        //let node = elm.previousElementSibling; to select next elemnet from same cls 
+         prt.innerHTML = "hello";
+         console.log(prt);
+     </script>
+ </body>
+ </html>
+ 

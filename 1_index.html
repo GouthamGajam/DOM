@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class = cl>list 1</li>
+        <li id="first">list 2</li>
+        <li class = cl>list 3</li>
+    </ul>
+
+    <script>
+        // let elm = document.getElementById("first");
+        // console.log(elm.innerHTML);
+        // elm.innerHTML = "Hello";
+        let elmm = document.getElementsByClassName("cl");
+        console.log(elmm);
+        for(let i=0; i< elmm.length ; i++)
+        {
+            elmm[i].innerHTML = "World";
+        }
+    </script>
+</body>
+</html>
